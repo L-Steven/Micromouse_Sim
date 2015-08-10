@@ -190,7 +190,6 @@ class WallObject:
 		self.canvas = canvas
 		
 		self.vertHeight,self.vertWidth,self.horzHeight,self.horzWidth = self.validWalls()
-		#self.flip()
 		
 		self.vertObjects = []
 		self.horzObjects = []
@@ -224,18 +223,5 @@ class WallObject:
 					temp.append(-1)
 			self.horzObjects.append(temp)
 			
-	def flip(self):
-		print(self.vert)
-		temp = self.vert
-		for i in range(0,self.vertHeight):
-			temp[self.vertHeight - i - 1] = self.vert[i]
-		self.vert = temp
-		print(self.vert)
-		
-		
-		temp = self.horz
-		for i in range(0,self.horzHeight):
-			temp[self.horzHeight - i - 1] = self.horz[i]
-		self.horz = temp
 			
 

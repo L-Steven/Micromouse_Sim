@@ -2,7 +2,6 @@
 #8/9/2015
 
 #This is designed for python 3
-#Hope you have python 3 Roberto...
 
 
 
